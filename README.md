@@ -25,14 +25,34 @@ dicoba dengan test data berupa review belum di-rating.
   - Dengan KFold k=1000: 0.25983333333333336
 
 ### Progress 2
-[Will be discussed after progress 1 deadline]
+- Mengubah metode menjadi Hybrid ANN-NB
+- Menggunakan CountVectorizer unigram untuk feature extraction
+- Dataset: 540 movie review dengan rating 1-10. Hasil data crawling.
+- Reduksi class menjadi 5, dengan menggabungkan 2 rating yang berdekatan.
+- Classes:
+  - 1 to 2
+  - 3 to 4
+  - 5 to 6
+  - 7 to 8
+  - 9 to 10
+- Metrics:
+  - Akurasi Prediksi
+  - Learning Curve, khusus Hybrid ANN-NB
 
-### Final Product
-[Will be discussed after progress 2 deadline]
-
+### Final Progress
+- Feature extraction ditambah dengan proses stemming sebelum CountVectorizer
+- Dataset ditambah menjadi 1885 review
+#### Hasil Eksperimen
+- Akurasi hasil CV=10
+  - Max : 0.4830508474576271
+  - Min : 0.4046610169491525
+  - Mean : 0.4398305084745762
+  
 ### Resources
-- Dataset diambil dari https://www.kaggle.com/iarunava/imdb-movie-reviews-dataset
+- Dataset dicrawling dengan Scrapper.ipynb
 
 ### Libraries
 - nltk
 - sklearn
+- keras
+- tensorflow
